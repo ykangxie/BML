@@ -27,12 +27,12 @@ x = c(2,2,2,3);
 y = c(3,2,4,4);
 car = c(1,1,2,1);
 n  = 4;
-t = 1; ////set time
+t = 1; 
 r = 6;
 c = 8;
 
 changeBML=function(x,y,car,n){
-  temp<-.C("RmoveCars",as.integer(x),as.integer(y),as.integer(car),as.integer(n),integer(3*n),val=integer(3*n))$val
+  temp<-.C("RmoveCars",as.integer(x),as.integer(y),as.integer(car),as.integer(n), val=integer(3*n))$val
   matrix(temp,ncol=3,byrow=TRUE)
 }
 
